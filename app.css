@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+#fon{
+    font-family: "Fredericka the Great", serif;
+}
+
+#symbol{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+@tailwind utilities;

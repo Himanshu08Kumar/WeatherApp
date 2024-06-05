@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iWeather</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="shortcut icon" href="weather.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Creepster&family=Fredericka+the+Great&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-14 bg-gradient-to-r from-gray-900 to-gray-600">
+    <div class="flex flex-col content-center mx-32">
+      <nav class="">
+        <h1 class="text-6xl text-center py-10 text-white" id="fon">
+          Weather info
+        </h1>
+      </nav>
+      
+      <input
+        type="text"
+        id="cityName"
+        class="w-72 px-3 py-1 hover: outline-offset-4 hover:outline hover:outline-3 hover:outline-sky-700 m-auto rounded-lg mb-5 text-center" 
+        placeholder="Enter City Name  "
+      />
+      <div class=" mx-96 h-2/4 justify-center">
+      <div
+        id="name"
+        class="flex w-72 py-3 pl-40 text-3xl font-serif font-bold text-white px-3"
+      ></div>
+    
+      <div
+        id="temprature"
+        class="flex w-72 py-3 pl-40 text-3xl font-serif font-bold text-white px-3"
+      ></div>
+     
+      <div class="flex w-2/5 pl-36">
+        <img src="" alt="" id="icc" class="ml-auto" />
+        <div
+          id="weatherDesc"
+          class="flex w-72 py-3 mt-4 text-3xl font-serif font-bold text-white px-3"
+        ></div>   
+      </div>
+      <div
+        id="rise"
+        class="flex  py-3 pl-36 text-2xl font-serif font-bold text-white px-3"
+      ></div>
+      <div
+        id="set"
+        class="flex  py-3 pl-36 text-2xl font-serif font-bold text-white px-3"
+      ></div>
+    </div>
+
+      <button
+        id="btn"
+        class="bg-black text-white px-3 py-1 w-72 m-auto rounded-lg shadow-md shadow-pink-400 hover:shadow-lg hover:bg-gray-300 hover:text-black duration-200 hover:shadow-yellow-400"
+      >
+        search
+      </button>
+    </div>
+    <div>
+    <footer class="absolute inset-x-0 bottom-1 text-center text-slate-200 " id="foot">
+      &copy;Himanshu 2024 Weather App
+    </footer>
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>
