@@ -13,22 +13,49 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   </head>
-  <body class="h-14 bg-gradient-to-r from-gray-900 to-gray-600">
+  <body class="h-14 bg-gradient-to-r from-gray-900 to-gray-600 " id="container">
     <div class="flex flex-col content-center mx-32">
       <nav class="">
         <h1 class="text-6xl text-center py-10 text-white" id="fon">
           Weather info
         </h1>
+        <p class="text-center text-2xl font-semibold text-white font mb-5" id="para">Stay ahead of the storm with real-time weather updates!!</p>
       </nav>
       
-      <input
+      <!-- <input
         type="text"
         id="cityName"
         class="flex justify-center items-center w-72 px-3 py-1 hover: outline-offset-4 hover:outline hover:outline-3 hover:outline-sky-700 m-auto rounded-lg mb-5 text-center" 
-        placeholder="Enter City Name  "
-      />
-      <div class=" flex flex-col justify-center items-center">
+        placeholder="Enter City Name"
+      /> -->
+      <!-- <div class="uo"> -->
+      <div class="form-control m-auto ">
+        <input type="value" required="" id="cityName" class="text-center">
+        <label>
+            <span style="transition-delay:0ms">E</span><span style="transition-delay:50ms">n</span><span style="transition-delay:100ms">t</span><span style="transition-delay:150ms">e</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms"></span><span style="transition-delay:300ms">L</span><span style="transition-delay:350ms">o</span><span style="transition-delay:400ms">c</span><span style="transition-delay:450ms">a</span><span style="transition-delay:500ms">t</span><span style="transition-delay:550ms">i</span><span style="transition-delay:600ms">o</span><span style="transition-delay:650ms">n</span>       </label>
+    </div>
+      <!-- <button
+      id="btn"
+      class="bg-black text-white px-3 py-1 w-72 m-auto rounded-lg shadow-md shadow-pink-400 hover:shadow-lg hover:bg-gray-300 hover:text-black duration-200 hover:shadow-yellow-400"
+    > -->
+    <button class="btn m-auto mt-5" type="button">
+      <strong>SEARCH</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
+    
+      <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </button>
+  <!-- </div> -->
+  
+      <div class=" flex flex-col justify-center items-center ">
       <div
         id="name"
         class=" flex py-3 flex-col justify-center items-center text-3xl font-serif font-bold text-white "
@@ -56,15 +83,10 @@
       ></div>
     </div>
 
-      <button
-        id="btn"
-        class="bg-black text-white px-3 py-1 w-72 m-auto rounded-lg shadow-md shadow-pink-400 hover:shadow-lg hover:bg-gray-300 hover:text-black duration-200 hover:shadow-yellow-400"
-      >
-        search
-      </button>
+     
     </div>
     <div>
-    <footer class="absolute inset-x-0 bottom-1 text-center text-slate-200 " id="foot">
+    <footer class="absolute inset-x-0 bottom-1 text-center text-yellow-800 " id="foot">
       &copy;Himanshu 2024 Weather App
     </footer>
     
