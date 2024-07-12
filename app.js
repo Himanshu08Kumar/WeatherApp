@@ -1,4 +1,4 @@
-document.querySelector('#btn').addEventListener('click',fetchWeather);
+document.querySelector('.btn').addEventListener('click',fetchWeather);
 
 async function fetchWeather(){
     const city = document.querySelector('#cityName').value;
